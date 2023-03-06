@@ -11,4 +11,8 @@ function selectionSort($numbers){
     }
     return $numbers;
 }
+$input=$_Get['input'];
+$numbers = explode(',', $input);
+$sorted_list=selectionSort($numbers);
+echo json_encode($sorted_list);
 ?>
